@@ -1,1 +1,1 @@
-本人算法修炼仓库，LeetCode刷题插件：[Labuladong](https://labuladong.online/algo/intro/all/)
+本人数据结构与算法修炼仓库，LeetCode刷题插件：[Labuladong](https://labuladong.online/algo/intro/all/)
