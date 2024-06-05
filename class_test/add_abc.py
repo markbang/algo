@@ -1,11 +1,13 @@
-# l = []
-# for a in range(1001):
-#     for b in range(1001-a):
-#         c = 1000-(a+b)
-#         if a**2 + b**2 == c**2:
-#             l.append([a, b, c])
-# print(l)
-def sum_of_n(n):
-    the_sum = n * (n + 1) / 2
-    return the_sum
-print(sum_of_n(10))
+import base64
+import zlib
+
+# 原始数据
+original_data = '10224804417'.encode('utf-8')
+
+# zlib压缩
+compressed_data = zlib.compress(original_data)
+
+# Base64编码
+encoded_str = base64.b64encode(compressed_data).decode('utf-8')
+
+print(encoded_str)
