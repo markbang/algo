@@ -1,5 +1,6 @@
 from Node import Node
 
+
 class UnordredList:
     def __init__(self):
         self.head = None
@@ -11,7 +12,7 @@ class UnordredList:
         temp = Node(item)
         temp.set_next(self.head)
         self.head = temp
-        
+
     def length(self):
         count = 0
         current = self.head
@@ -19,7 +20,7 @@ class UnordredList:
             count += 1
             current = current.get_next()
         return count
-    
+
     def search(self, item):
         current = self.head
         while current != None:
@@ -69,11 +70,11 @@ class UnordredList:
             if current.get_next() == None:
                 return "Not Found"
             else:
-                count +=1
+                count += 1
                 current = current.get_next()
         return count
 
-    def pop (self, pos=None):
+    def pop(self, pos=None):
         if pos == None:
             current = self.head
             previous = None
@@ -92,14 +93,15 @@ class UnordredList:
                 current = current.get_next()
             previous.set_next(current.get_next())
             return current.get_data()
-    
+
     def __str__(self) -> str:
         current = self.head
         result = []
         while current != None:
             result.append(current.get_data())
             current = current.get_next()
-        return '-->'.join(map(str, result)) + '-->None'
+        return "-->".join(map(str, result)) + "-->None"
+
 
 if __name__ == "__main__":
     ordered_list = UnordredList()

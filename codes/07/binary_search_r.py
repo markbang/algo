@@ -9,7 +9,7 @@ def binary_search_r(a_list, item):
             if item < a_list[mid_point]:
                 return binary_search_r(a_list[:mid_point], item)
             else:
-                return binary_search_r(a_list[mid_point+1:], item)
+                return binary_search_r(a_list[mid_point + 1 :], item)
 
 
 if __name__ == "__main__":

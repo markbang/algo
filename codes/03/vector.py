@@ -19,9 +19,9 @@ class Vector:
 
     def __add__(self, other):
         """Return sum of two vectors."""
-        if len(self) != len(other):    # relies on __len__ method
-            raise ValueError('Dimensions must agree')
-        result = Vector(len(self))     # start with vector of zeros
+        if len(self) != len(other):  # relies on __len__ method
+            raise ValueError("Dimensions must agree")
+        result = Vector(len(self))  # start with vector of zeros
         for j in range(len(self)):
             result[j] = self[j] + other[j]
         return result
@@ -36,7 +36,7 @@ class Vector:
 
     def __str__(self):
         """Produce string representation of vector."""
-        return '<' + str(self._coords)[1:-1] + '>'    # adapt list representation
+        return "<" + str(self._coords)[1:-1] + ">"  # adapt list representation
 
 
 if __name__ == "__main__":

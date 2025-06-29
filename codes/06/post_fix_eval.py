@@ -1,5 +1,6 @@
 from array_stack import ArrayStack
 
+
 def post_fix_eval(post_fix_expr):
     operand_stack = ArrayStack()
     token_list = post_fix_expr.split()
@@ -20,11 +21,11 @@ def do_math(op, op1, op2):
     if op == "*":
         return op1 * op2
     elif op == "/":
-        return op1 / op2 
+        return op1 / op2
     elif op == "+":
-        return op1 + op2 
+        return op1 + op2
     else:
-        return op1 - op2 
+        return op1 - op2
 
 
 if __name__ == "__main__":

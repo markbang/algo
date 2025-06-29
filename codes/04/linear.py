@@ -1,8 +1,9 @@
 def algorithm(N):
     count = 0
-    for i in range(N/2):
+    for i in range(N / 2):
         count += 1
     return count
+
 
 def algorithm(N):
     count = 0

@@ -1,5 +1,5 @@
 class Point:
-    def __init__(self, x = 0, y = 0):
+    def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
 
@@ -10,6 +10,7 @@ class Point:
         x = self.x + other.x
         y = self.y + other.y
         return Point(x, y)
+
 
 if __name__ == "__main__":
     p1 = Point(2, 3)

@@ -22,6 +22,6 @@ def sort_detect(s1, s2):
 if __name__ == "__main__":
     # s1, s2 = 'earth', 'heart'
     # s1, s2 = 'python', 'typhon'
-    s1, s2 = 'eearth', 'hearrt'
+    s1, s2 = "eearth", "hearrt"
     output = sort_detect(s1, s2)
-    print('output:', output)
+    print("output:", output)

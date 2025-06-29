@@ -19,8 +19,8 @@ def anagram_solution2(s1, s2):
     # return matches
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # s1, s2 = 'heart', 'earth'
-    s1, s2 = 'heert', 'earth'
+    s1, s2 = "heert", "earth"
     # s1, s2 = 'python', 'typhon'
     print(anagram_solution2(s1, s2))

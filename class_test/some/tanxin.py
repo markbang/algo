@@ -13,6 +13,7 @@ def rec_mc(coin_value_list, change, known_results):
                 known_results[change] = min_coins
     return min_coins
 
+
 if __name__ == "__main__":
     change = 199
     print(rec_mc([1, 5, 10, 25], change, {i + 1: 0 for i in range(change)}))

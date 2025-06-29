@@ -6,7 +6,7 @@ def anagram_solution1(s1, s2):
     while pos1 < len(s1) and still_ok:
         pos2 = 0
         found = False
-        
+
         while pos2 < len(alist) and not found:
             if s1[pos1] == alist[pos2]:
                 found = True
@@ -22,8 +22,8 @@ def anagram_solution1(s1, s2):
     return still_ok
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # s1, s2 = 'eeee', 'eeea'
     # s1, s2 = 'python', 'typhon'
-    s1, s2 = 'eeaa', 'eeea'
+    s1, s2 = "eeaa", "eeea"
     print(anagram_solution1(s1, s2))

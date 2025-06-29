@@ -3,11 +3,11 @@ def anagram_solution4(s1, s2):
     c2 = [0] * 26
 
     for i in range(len(s1)):
-        pos = ord(s1[i]) - ord('a')
+        pos = ord(s1[i]) - ord("a")
         c1[pos] = c1[pos] + 1
 
     for i in range(len(s2)):
-        pos = ord(s2[i]) - ord('a')
+        pos = ord(s2[i]) - ord("a")
         c2[pos] = c2[pos] + 1
 
     j = 0
@@ -21,9 +21,8 @@ def anagram_solution4(s1, s2):
     return still_ok
 
 
-
-if __name__ == '__main__':
-    s1, s2 = 'heart', 'earth'
+if __name__ == "__main__":
+    s1, s2 = "heart", "earth"
     # s1, s2 = 'heert', 'earth'
     # s1, s2 = 'python', 'typhon'
     print(anagram_solution4(s1, s2))

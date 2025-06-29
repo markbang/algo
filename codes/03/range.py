@@ -8,13 +8,13 @@ class Range:
         """
 
         if step == 0:
-            raise ValueError('step cannot be 0.')
+            raise ValueError("step cannot be 0.")
 
-        if stop is None:              # special case of range(n)
-            start, stop = 0, start    # should be treated as if range(0, n)
+        if stop is None:  # special case of range(n)
+            start, stop = 0, start  # should be treated as if range(0, n)
 
         # calculate the effective length once
-        self._length = max(0, (stop - start + step -1) // step)
+        self._length = max(0, (stop - start + step - 1) // step)
 
         # need knowledge of start and step (but not stop) to support __getitem__
         self._start = start
@@ -27,13 +27,12 @@ class Range:
     def __getitem__(self, k):
         """Return entry at index k (using standard interpretation if negative)."""
         if k < 0:
-            k += len(self)    # attempt to convert negative index
+            k += len(self)  # attempt to convert negative index
 
         if not 0 <= k < self._length:
-            raise IndexError('index out of range.')
+            raise IndexError("index out of range.")
 
         return self._start + k * self._step
-
 
 
 if __name__ == "__main__":

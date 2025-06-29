@@ -23,7 +23,7 @@ class ArrayStackAlter:
         Raise Empty exception if the stack is empty.
         """
         if self.is_empty():
-            raise Empty('Stack is empty')
+            raise Empty("Stack is empty")
         return self._data[0]  # the first item in the list
 
     def pop(self):
@@ -32,12 +32,13 @@ class ArrayStackAlter:
         Raise Empty exception if the stack is empty.
         """
         if self.is_empty():
-            raise Empty('Stack is empty')
+            raise Empty("Stack is empty")
         return self._data.pop(0)  # remove first item from list
 
 
 class Empty(Exception):
     """Error attempting to access an element from an empty container."""
+
     pass
 
 

@@ -53,8 +53,6 @@ if __name__ == "__main__":
     print(S.is_empty())
     print(S.pop())
 
-
-
     # def __init__(self):
     #     """Create an empty stack."""
     #     self._data = []

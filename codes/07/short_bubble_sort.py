@@ -4,11 +4,11 @@ def short_bubble_sort(a_list):
     while pass_num > 0 and exchanges:
         exchanges = True
         for i in range(pass_num):
-            if a_list[i] > a_list[i+1]:
+            if a_list[i] > a_list[i + 1]:
                 exchanges = True
                 temp = a_list[i]
-                a_list[i] = a_list[i+1]
-                a_list[i+1] = temp
+                a_list[i] = a_list[i + 1]
+                a_list[i + 1] = temp
         pass_num = pass_num - 1
 
 

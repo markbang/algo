@@ -10,6 +10,7 @@ def dp_make_change(coin_value_list, change, min_coins, coins_used):
         coins_used[cents] = new_coin
     return min_coins[change]
 
+
 def print_coins(coin_used, change):
     coin = change
     while coin > 0:
@@ -18,7 +19,7 @@ def print_coins(coin_used, change):
         coin = coin - this_coin
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     c1 = [1, 5, 10, 21, 25]
     coins_used = [0] * 64
     coin_count = [0] * 64

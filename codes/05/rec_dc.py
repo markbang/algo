@@ -16,6 +16,6 @@ def rec_dc(coin_value_list, change, known_results):
     return min_coins
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     change = 519
     print(rec_dc([1, 5, 10, 25], change, {i + 1: 0 for i in range(change)}))

@@ -3,10 +3,10 @@ class HashTable:
         self.size = 11
         self.slots = [None] * self.size
         self.data = [None] * self.size
-    
+
     def put(self, key, data):
         hash_value = self.hash_function(key, len(self.slots))
-        
+
         if self.slots[hash_value] == None:
             self.slots[hash_value] = key
             self.data[hash_value] = data
@@ -22,10 +22,9 @@ class HashTable:
 
     def hash_function(self, key, size):
         return key % size
-    
+
     def rehash(self, old_hash, size):
         return (old_hash + 1) % size
-    
+
     def get(self, key):
         pass
-        

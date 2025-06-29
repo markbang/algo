@@ -1,4 +1,5 @@
-from array_queue import ArrayQueue 
+from array_queue import ArrayQueue
+
 
 def hot_potato(name_list, num):
     sim_queue = ArrayQueue()
@@ -15,7 +16,7 @@ def hot_potato(name_list, num):
 
 
 if __name__ == "__main__":
-    name_list = ['Bill', 'David', 'Susan', 'Jane', 'Kent', 'Bard']
+    name_list = ["Bill", "David", "Susan", "Jane", "Kent", "Bard"]
     num = 6
     win = hot_potato(name_list, num)
     print(win)

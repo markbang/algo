@@ -6,8 +6,9 @@ def sequnential_search(a_list, item):
             return True
         else:
             pos += 1
-            
+
     return found
+
 
 def ordered_sequnential_search(a_list, item):
     pos = 0
@@ -23,7 +24,8 @@ def ordered_sequnential_search(a_list, item):
                 pos += 1
     return found
 
-def binary_search(data, target, low=0, high=None): # 递归 log(n)
+
+def binary_search(data, target, low=0, high=None):  # 递归 log(n)
     low = 0
     high = len(data) - 1
     if low > high:
@@ -37,7 +39,8 @@ def binary_search(data, target, low=0, high=None): # 递归 log(n)
         else:
             return binary_search(data, target, mid + 1, high)
 
-def binary_search_for(a_list, item): # 循环 log(n)
+
+def binary_search_for(a_list, item):  # 循环 log(n)
     first = 0
     last = len(a_list) - 1
     found = False
@@ -52,9 +55,10 @@ def binary_search_for(a_list, item): # 循环 log(n)
                 first = mid_point + 1
     return found
 
-if __name__=="__main__":
-    a_list = [1,2,3,4,5,6,7,8,9,10]
+
+if __name__ == "__main__":
+    a_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     print(sequnential_search(a_list, 5))
     print(sequnential_search(a_list, 11))
-    print(ordered_sequnential_search(list(range(1,11)), 5))
-    print(binary_search(list(range(1,11)), 5))
+    print(ordered_sequnential_search(list(range(1, 11)), 5))
+    print(binary_search(list(range(1, 11)), 5))

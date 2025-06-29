@@ -21,7 +21,7 @@ class HashTable:
                     self.slots[next_slot] = key
                     self.data[next_slot] = data
                 else:
-                    self.data[next_slot] = data # replace the old data
+                    self.data[next_slot] = data  # replace the old data
 
     def hash_function(self, key, size):
         return key % size

@@ -16,26 +16,28 @@ class Deque:
 
     def delete_first(self):
         if self.is_empty():
-            raise Empty('Deque is empty')
+            raise Empty("Deque is empty")
         return self._data.pop(0)
 
     def delete_last(self):
         if self.is_empty():
-            raise Empty('Deque is empty')
+            raise Empty("Deque is empty")
         return self._data.pop()
 
     def first(self):
         if self.is_empty():
-            raise Empty('Deque is empty')
+            raise Empty("Deque is empty")
         return self._data[0]
 
     def last(self):
         if self.is_empty():
-            raise Empty('Deque is empty')
+            raise Empty("Deque is empty")
         return self._data[-1]
+
 
 class Empty(Exception):
     """Error attempting to access an element from an empty container."""
+
     pass
 
 

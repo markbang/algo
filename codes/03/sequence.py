@@ -1,4 +1,5 @@
-from abc import ABCMeta, abstractmethod    # need these definitions
+from abc import ABCMeta, abstractmethod  # need these definitions
+
 
 class Sequence(metaclass=ABCMeta):
     """Our own version of collections.Sequence abstract base class."""
@@ -14,21 +15,21 @@ class Sequence(metaclass=ABCMeta):
     def __contains__(self, val):
         """Return True if val found in the sequence; False otherwise."""
         for j in range(len(self)):
-            if self[j] == val:    # found match
+            if self[j] == val:  # found match
                 return True
         return False
 
     def index(self, val):
         """Return leftmost index at which val is found (or raise ValueError)."""
         for j in range(len(self)):
-            if self[j] == val:                        # leftmost match
+            if self[j] == val:  # leftmost match
                 return j
-        raise ValueError('value not in sequence.')    # never found a match
+        raise ValueError("value not in sequence.")  # never found a match
 
     def count(self, val):
         """Return the number of elements equal to given value."""
         k = 0
         for j in range(len(self)):
-            if self[j] == val:    # found a match
+            if self[j] == val:  # found a match
                 k += 1
         return k

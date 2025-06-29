@@ -1,3 +1,6 @@
 __pycache__
 trick
 data.pickle
+.idea
+.ruff_cache
+.venv/

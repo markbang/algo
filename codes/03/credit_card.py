@@ -47,8 +47,8 @@ class CreditCard:
 
         Return True if charge was processed; False if charge was denied.
         """
-        if price + self._balance > self._limit:    # if charge would exceed limit,
-            return False                           # cannot accept charge
+        if price + self._balance > self._limit:  # if charge would exceed limit,
+            return False  # cannot accept charge
         else:
             self._balance += price
             return True
@@ -58,31 +58,16 @@ class CreditCard:
         self._balance -= amount
 
 
-if __name__ == '__main__':
-    cc = CreditCard('Yutong', 
-                    'Gonghang', 
-                    '8888888888888888', 
-                    100000)
-    print('_bank', cc.get_bank())
-    print('_account', cc.get_account())
+if __name__ == "__main__":
+    cc = CreditCard("Yutong", "Gonghang", "8888888888888888", 100000)
+    print("_bank", cc.get_bank())
+    print("_account", cc.get_account())
     print(cc._limit)
     cc.set_limit(1000000)
-    print('_limit', cc.get_limit())
+    print("_limit", cc.get_limit())
 
     cc.charge(1000)
-    print('The current balance', cc.get_balance())
+    print("The current balance", cc.get_balance())
 
     cc.charge(10000000)
-    print('The current balance', cc.get_balance())
-    
-
-
-
-
-
-
-
-
-
-
-
+    print("The current balance", cc.get_balance())

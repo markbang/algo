@@ -6,6 +6,7 @@
 
 # @lc code=start
 
+
 class Solution(object):
     def isValid(self, s):
         """
@@ -13,11 +14,7 @@ class Solution(object):
         :rtype: bool
         """
         list1 = []
-        dict1 = {
-            '(':')',
-            '[':']',
-            '{':'}'
-        }
+        dict1 = {"(": ")", "[": "]", "{": "}"}
         keys = dict1.keys()
         for i in s:
             if i in keys:
@@ -32,4 +29,6 @@ class Solution(object):
             return True
         else:
             return False
+
+
 # @lc code=end

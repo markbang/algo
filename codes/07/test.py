@@ -15,4 +15,4 @@ def put(self, key, data):
                 self.slots[next_slot] = key
                 self.data[next_slot] = data
             else:
-                self.data[next_slot] = data # replace the old data
+                self.data[next_slot] = data  # replace the old data

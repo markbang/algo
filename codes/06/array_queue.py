@@ -23,7 +23,7 @@ class ArrayQueue:
         Raise Empty exception if the queue is empty.
         """
         if self.is_empty():
-            raise Empty('Queue is empty')
+            raise Empty("Queue is empty")
         return self._data[0]  # the last item in the list
 
     def dequeue(self):
@@ -32,12 +32,13 @@ class ArrayQueue:
         Raise Empty exception if the queue is empty.
         """
         if self.is_empty():
-            raise Empty('Queue is empty')
+            raise Empty("Queue is empty")
         return self._data.pop(0)  # remove last item from list
 
 
 class Empty(Exception):
     """Error attempting to access an element from an empty container."""
+
     pass
 
 

@@ -1,5 +1,6 @@
 from array_stack import ArrayStack
 
+
 def divide_by_2(dec_number):
     rem_stack = ArrayStack()
     while dec_number > 0:

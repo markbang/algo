@@ -1,5 +1,6 @@
 from deque import Deque
 
+
 def palchecker(a_string):
     print(a_string)
     char_deque = Deque()
@@ -21,7 +22,7 @@ def palchecker(a_string):
 
 if __name__ == "__main__":
     # a_string1 = 'lsdkjfskf'
-    a_string1 = '上海自来水来自海上'
+    a_string1 = "上海自来水来自海上"
     print(palchecker(a_string1))
-    a_string2 = 'TENET'
+    a_string2 = "TENET"
     print(palchecker(a_string2))

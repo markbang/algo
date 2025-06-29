@@ -1,6 +1,7 @@
 from array_stack import ArrayStack
 import string
 
+
 def infix_to_post_fix(infix_expr):
     prec = {}
     prec["*"] = 3
@@ -25,8 +26,7 @@ def infix_to_post_fix(infix_expr):
                 post_fix_list.append(top_token)
                 top_token = op_stack.pop()
         else:
-            while (not op_stack.is_empty()) and \
-                (prec[op_stack.top()] >= prec[token]):
+            while (not op_stack.is_empty()) and (prec[op_stack.top()] >= prec[token]):
                 post_fix_list.append(op_stack.pop())
             op_stack.push(token)
 

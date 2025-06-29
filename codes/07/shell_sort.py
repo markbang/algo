@@ -8,13 +8,14 @@ def shell_sort(a_list):
 
         sub_list_count = sub_list_count // 2
 
+
 def gap_insertion_sort(a_list, start, gap):
-    for i in range(start+gap, len(a_list), gap):
+    for i in range(start + gap, len(a_list), gap):
         current_value = a_list[i]
         position = i
 
-        while position >= gap and a_list[position-gap] > current_value:
-            a_list[position] = a_list[position-gap]
+        while position >= gap and a_list[position - gap] > current_value:
+            a_list[position] = a_list[position - gap]
             position = position - gap
         a_list[position] = current_value
 

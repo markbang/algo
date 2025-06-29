@@ -8,7 +8,7 @@ def rec_mc(coin_value_list, change):
         # 使用列表循环来筛选出小于当前找零金额的硬币面值
         for i in [c for c in coin_value_list if c <= change]:
             # 递归调用将找零金额减去所选的硬币面值，并将所需的硬币数加1，以表示使用了1枚硬币。
-            num_coins = 1 + rec_mc(coin_value_list, change-i)
+            num_coins = 1 + rec_mc(coin_value_list, change - i)
             if num_coins < min_coins:
                 min_coins = num_coins
     return min_coins

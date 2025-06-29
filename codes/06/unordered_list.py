@@ -1,5 +1,6 @@
 from node import Node
 
+
 class UnorderedList:
     def __init__(self):
         self.head = None
@@ -74,34 +75,33 @@ class UnorderedList:
         pass
 
 
-
 if __name__ == "__main__":
     my_list = UnorderedList()
     print(my_list.is_empty())
-    print('The current length', my_list.length())
+    print("The current length", my_list.length())
     my_list.add(31)
     my_list.add(77)
     my_list.add(17)
-    print('The current length', my_list.length())
+    print("The current length", my_list.length())
     my_list.add(93)
     my_list.add(26)
     my_list.add(54)
     print(my_list.is_empty())
-    print('The current length', my_list.length())
+    print("The current length", my_list.length())
     my_list.look()
     # print(my_list.is_empty())
     # print(my_list.length())
     print(my_list.search(93))
-    print('-' * 10)
+    print("-" * 10)
     my_list.remove(26)
     my_list.look()
-    print('-' * 10)
+    print("-" * 10)
     my_list.remove(54)
     my_list.look()
-    print('-' * 10)
+    print("-" * 10)
     my_list.remove(31)
     my_list.look()
-    print('-' * 10)
+    print("-" * 10)
     # print(my_list.is_empty())
     # print(my_list.length())
     # print(my_list.remove(54))
